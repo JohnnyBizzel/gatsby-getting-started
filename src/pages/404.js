@@ -10,7 +10,7 @@ export default () => (
       <p className={styles.errorMessage}>
         The page you are looking for does not exists.
     </p>
-    <Link to='/'>Home</Link>
+      <Link to='/'>Home</Link>
     </div>
   </Layout>
 )
