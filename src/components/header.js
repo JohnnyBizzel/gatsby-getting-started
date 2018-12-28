@@ -22,19 +22,19 @@ const SocialButton = (props) => {
 
   if (props.site === 'twitter') {
     style = styles.buttonTwitter;
-    url = "https://twitter.com/" + props.username;
+    url = 'https://twitter.com/' + props.username;
   }
   else if (props.site === 'linkedin') {
     style = styles.buttonLinkedin;
-    url = "https://www.linkedin.com/in/" + props.username;
+    url = 'https://www.linkedin.com/in/' + props.username;
   }
   else if (props.site === 'github') {
     style = styles.buttonGithub;
-    url = "https://www.github.com/" + props.username;
+    url = 'https://www.github.com/' + props.username;
   }
   
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a href={url} target='_blank' rel='noopener noreferrer'>
       <div className={style}>{props.children}&nbsp;</div>
     </a>
   )
@@ -47,9 +47,9 @@ export default () => (
 
         <div className={styles.row}>
           <HomeButton to='/' text='My Gatsby blog' />
-          <SocialButton site="github" username="evangeloper"></SocialButton>
-          <SocialButton site="linkedin" username="evangeloper"></SocialButton>
-          <SocialButton site="twitter" username="evangeloper"></SocialButton>
+          <SocialButton site='github' username='evangeloper'></SocialButton>
+          <SocialButton site='linkedin' username='evangeloper'></SocialButton>
+          <SocialButton site='twitter' username='evangeloper'></SocialButton>
         </div>
 
         <div className={styles.row}>
