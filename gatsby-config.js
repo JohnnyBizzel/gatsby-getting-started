@@ -14,6 +14,9 @@ module.exports = {
               path: `${__dirname}/src/markdown`,
             },
         },
+
+        'gatsby-transformer-remark'
+        
     ]
 
 }
